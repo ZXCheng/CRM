@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HYUploadReceiptViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="452"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="452"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pig-Yo-TXc">
+                        <rect key="frame" x="2" y="2" width="370" height="370"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pig-Yo-TXc" secondAttribute="height" multiplier="1:1" id="sNj-Sj-yuy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O66-MV-fiC">
+                        <rect key="frame" x="6" y="372" width="362" height="40"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-kD-1GO">
+                        <rect key="frame" x="6" y="412" width="362" height="40"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnA-qI-c3B" userLabel="cover">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="452"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYZ-Pj-20l">
+                        <rect key="frame" x="342" y="0.0" width="32" height="32"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="5Ch-lv-X0K"/>
+                            <constraint firstAttribute="height" constant="32" id="YaD-Ej-Chb"/>
+                        </constraints>
+                        <state key="normal" image="Delete.png"/>
+                        <connections>
+                            <action selector="deleteReceipt:" destination="gTV-IL-0wX" eventType="touchUpInside" id="z0b-ds-f03"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="O66-MV-fiC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="2xo-ng-fJu"/>
+                <constraint firstItem="AnA-qI-c3B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3m4-Rm-u0Q"/>
+                <constraint firstItem="NYZ-Pj-20l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="821-ma-rZB"/>
+                <constraint firstItem="hwO-kD-1GO" firstAttribute="top" secondItem="O66-MV-fiC" secondAttribute="bottom" id="Fqj-Vk-Wea"/>
+                <constraint firstAttribute="trailing" secondItem="NYZ-Pj-20l" secondAttribute="trailing" id="RdS-if-qOb"/>
+                <constraint firstAttribute="bottom" secondItem="AnA-qI-c3B" secondAttribute="bottom" id="YRW-On-4Ax"/>
+                <constraint firstAttribute="trailing" secondItem="hwO-kD-1GO" secondAttribute="trailing" constant="6" id="Yy4-7W-zYV"/>
+                <constraint firstItem="pig-Yo-TXc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="c1E-mu-wgs"/>
+                <constraint firstItem="pig-Yo-TXc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="cKJ-Xw-DoT"/>
+                <constraint firstAttribute="trailing" secondItem="AnA-qI-c3B" secondAttribute="trailing" id="drM-WV-BGE"/>
+                <constraint firstItem="hwO-kD-1GO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="gWO-Pu-GvQ"/>
+                <constraint firstItem="hwO-kD-1GO" firstAttribute="height" secondItem="O66-MV-fiC" secondAttribute="height" id="gap-Jl-eac"/>
+                <constraint firstAttribute="trailing" secondItem="pig-Yo-TXc" secondAttribute="trailing" constant="2" id="q0g-IY-DjJ"/>
+                <constraint firstItem="AnA-qI-c3B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tmF-V2-Ymk"/>
+                <constraint firstItem="O66-MV-fiC" firstAttribute="top" secondItem="pig-Yo-TXc" secondAttribute="bottom" id="w17-Q5-jAp"/>
+                <constraint firstAttribute="trailing" secondItem="O66-MV-fiC" secondAttribute="trailing" constant="6" id="w2D-N6-c4Q"/>
+                <constraint firstItem="hwO-kD-1GO" firstAttribute="top" secondItem="O66-MV-fiC" secondAttribute="bottom" id="ygL-c1-ZW6"/>
+                <constraint firstAttribute="bottom" secondItem="hwO-kD-1GO" secondAttribute="bottom" id="yiE-gr-3KK"/>
+            </constraints>
+            <size key="customSize" width="374" height="452"/>
+            <connections>
+                <outlet property="coverView" destination="AnA-qI-c3B" id="Bg6-ic-8ru"/>
+                <outlet property="deleteButton" destination="NYZ-Pj-20l" id="BP3-Sk-0kF"/>
+                <outlet property="memoview" destination="hwO-kD-1GO" id="cGS-Xz-ofn"/>
+                <outlet property="receiptView" destination="pig-Yo-TXc" id="wl9-ex-iMI"/>
+                <outlet property="uploadDateView" destination="O66-MV-fiC" id="dl6-mG-9G5"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="156"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Delete.png" width="32" height="32"/>
+    </resources>
+</document>

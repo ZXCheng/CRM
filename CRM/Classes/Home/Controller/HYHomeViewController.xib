@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYHomeViewController">
+            <connections>
+                <outlet property="accompanyView" destination="mZ1-zt-Gwg" id="Xkj-sy-kGz"/>
+                <outlet property="imageView" destination="pgJ-2J-rrq" id="4fV-DH-itL"/>
+                <outlet property="scrollView" destination="i83-ZA-Kzp" id="Hwl-Br-oWf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Company.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pgJ-2J-rrq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <animations/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i83-ZA-Kzp">
+                    <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ1-zt-Gwg">
+                            <rect key="frame" x="30" y="30" width="210" height="262.5"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Accompany.png" translatesAutoresizingMaskIntoConstraints="NO" id="LvC-kM-9pI">
+                                    <rect key="frame" x="0.0" y="0.0" width="210" height="210"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="LvC-kM-9pI" secondAttribute="height" multiplier="1:1" id="kX0-ay-wkO"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现  场  陪  诊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57t-2e-6df">
+                                    <rect key="frame" x="0.0" y="220" width="210" height="42.5"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="textColor" red="0.066666666666666666" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="LvC-kM-9pI" firstAttribute="top" secondItem="mZ1-zt-Gwg" secondAttribute="top" id="5Mq-8K-BL2"/>
+                                <constraint firstAttribute="bottom" secondItem="57t-2e-6df" secondAttribute="bottom" id="5c5-j4-qe1"/>
+                                <constraint firstItem="57t-2e-6df" firstAttribute="leading" secondItem="mZ1-zt-Gwg" secondAttribute="leading" id="8wo-xc-EQP"/>
+                                <constraint firstAttribute="trailing" secondItem="57t-2e-6df" secondAttribute="trailing" id="HCg-0u-1Oj"/>
+                                <constraint firstAttribute="trailing" secondItem="LvC-kM-9pI" secondAttribute="trailing" id="WyY-An-SrG"/>
+                                <constraint firstAttribute="width" secondItem="mZ1-zt-Gwg" secondAttribute="height" multiplier="0.8" id="bxE-rW-OEg"/>
+                                <constraint firstItem="57t-2e-6df" firstAttribute="top" secondItem="LvC-kM-9pI" secondAttribute="bottom" constant="10" id="rVV-rA-oxK"/>
+                                <constraint firstItem="LvC-kM-9pI" firstAttribute="leading" secondItem="mZ1-zt-Gwg" secondAttribute="leading" id="vGx-Ov-d5D"/>
+                                <constraint firstItem="LvC-kM-9pI" firstAttribute="width" secondItem="mZ1-zt-Gwg" secondAttribute="width" id="voL-u2-uSu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mZ1-zt-Gwg" firstAttribute="width" secondItem="i83-ZA-Kzp" secondAttribute="width" multiplier="0.35" id="LUo-7a-Jps"/>
+                        <constraint firstItem="mZ1-zt-Gwg" firstAttribute="leading" secondItem="i83-ZA-Kzp" secondAttribute="leading" constant="30" id="cnN-WB-9Wb"/>
+                        <constraint firstItem="mZ1-zt-Gwg" firstAttribute="top" secondItem="i83-ZA-Kzp" secondAttribute="top" constant="30" id="gZQ-u0-1Mg"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pgJ-2J-rrq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0pd-7h-oAh"/>
+                <constraint firstItem="i83-ZA-Kzp" firstAttribute="height" secondItem="pgJ-2J-rrq" secondAttribute="height" multiplier="2" id="4MI-Yw-jvp"/>
+                <constraint firstItem="i83-ZA-Kzp" firstAttribute="top" secondItem="pgJ-2J-rrq" secondAttribute="bottom" id="Iui-oI-cpf"/>
+                <constraint firstAttribute="trailing" secondItem="pgJ-2J-rrq" secondAttribute="trailing" id="S4Y-aB-UUY"/>
+                <constraint firstItem="i83-ZA-Kzp" firstAttribute="top" secondItem="pgJ-2J-rrq" secondAttribute="bottom" id="SVh-T4-ap1"/>
+                <constraint firstAttribute="bottom" secondItem="i83-ZA-Kzp" secondAttribute="bottom" id="b2d-bl-2F1"/>
+                <constraint firstItem="pgJ-2J-rrq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nEC-Tv-xTe"/>
+                <constraint firstAttribute="trailing" secondItem="i83-ZA-Kzp" secondAttribute="trailing" id="oxY-xe-CI9"/>
+                <constraint firstItem="i83-ZA-Kzp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yOC-QV-rds"/>
+            </constraints>
+            <point key="canvasLocation" x="438" y="236"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Accompany.png" width="128" height="128"/>
+        <image name="Company.jpg" width="738" height="197"/>
+    </resources>
+</document>

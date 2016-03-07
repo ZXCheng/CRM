@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03F046E975AF478B0EDB4185E8D6E788098C9D64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03F046E975AF478B0EDB4185E8D6E788098C9D64" : 0,
+    "EA0ABFFF9987588B3EA19F2AF485C0E514C472E4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0B54CE16-2F33-4913-8905-746BA64A15C1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03F046E975AF478B0EDB4185E8D6E788098C9D64" : "CRM\/",
+    "EA0ABFFF9987588B3EA19F2AF485C0E514C472E4" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CRM",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CRM.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/zangxiaocheng\/FieldAccompany.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03F046E975AF478B0EDB4185E8D6E788098C9D64"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/wangxudong\/InsuranceClaimIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA0ABFFF9987588B3EA19F2AF485C0E514C472E4"
+    }
+  ]
+}
